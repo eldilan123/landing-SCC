@@ -1,71 +1,66 @@
 import React from "react";
 import Image from "next/image";
-
 import * as fonts from "@/libs/fonts";
+import styles from "./sectionAbout.module.scss";
 
-import img_base from "../../public/quienes-somos-ssc.png";
-import img_border from "../../public/quienes-somos-border.png";
-import img_rectangle_bg from "../../public/Rectangle 5.png";
+// Import your laptop image
+import laptopImage from "../../public/quienes-somos-ssc.png";
 
 const SectionAboutUs: React.FC = () => {
   return (
-    <section id="about" className="bg-cover h-screen">
-      <div className="container w-[100vw] h-[100vh] max-sm:flex max-sm:justify-center">
-        <Image
-          src={img_rectangle_bg}
-          className="absolute -z-20 max-sm:hidden"
-          alt="quienes-somos-ssc.png"
-        />
-        <Image
-          src={img_border}
-          className="absolute -z-10 w-[34%] left-[9vw] max-sm:hidden"
-          style={{ top: "calc(100vh + 25vh)" }}
-          alt="quienes-somos-border.png"
-        />
-        <Image
-          src={img_base}
-          className="absolute left-[7vw] w-[34%] max-sm:hidden"
-          style={{ top: "calc(100vh + 21vh)" }}
-          alt="Rectangle 5.png"
-        />
-        <div
-          className="text-start max-w-[46vw] max-md:max-w-[60vw] max-sm:max-w-[80vw] relative md:left-[50%] top-[10%]"
-          style={{ color: "rgba(69, 26, 26, 1)" }}
-        >
-          <h2
-            className={`${fonts.space_grotesk} font-[700] text-[42px] leading-[61px] mb-4`}
-            style={{
-              background:
-                "linear-gradient(89.23deg, #F0813C 26.26%, #EB3751 68.68%)",
-              color: "transparent",
-              backgroundClip: "text",
-              WebkitBackgroundClip: "text",
-            }}
-          >
+    <section id="about" className={styles.aboutSection}>
+      <div className={styles.aboutContainer}>
+        {/* Left red shape */}
+        <div className={styles.leftRedShape}>
+          <svg xmlns="http://www.w3.org/2000/svg" width="280" height="498" viewBox="0 0 280 498" fill="none" preserveAspectRatio="none">
+            <path d="M280 146.892C280 66.0418 214.467 0.5 133.628 0.5H-184V351.108C-184 431.958 -118.467 497.5 -37.6277 497.5H280V146.892Z" fill="#FC4554"/>
+          </svg>
+        </div>
+
+        {/* Image with laptop and hand */}
+        <div className={styles.imageContainer}>
+          {/* Laptop image in curved container */}
+          <div className={styles.laptopImageWrapper}>
+            <svg className={styles.laptopImageSvg} width="453" height="486" viewBox="0 0 453 486" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 143.326C0 64.4033 63.9795 0.423828 142.902 0.423828H453V342.675C453 421.597 389.021 485.577 310.098 485.577H0V143.326Z" fill="white"/>
+              <foreignObject x="0" y="0" width="453" height="486">
+                <div className={styles.laptopImageContainer}>
+                  <Image 
+                    src={laptopImage} 
+                    alt="Secure Core Consulting - Security Solutions" 
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    priority
+                  />
+                </div>
+              </foreignObject>
+            </svg>
+            
+            {/* Yellow border SVG */}
+            <svg className={styles.yellowBorderSvg} width="453" height="486" viewBox="0 0 453 486" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 143.75C2 65.9317 65.0841 2.84766 142.902 2.84766H451V343.098C451 420.917 387.916 484.001 310.098 484.001H2V143.75Z" stroke="#FFD464" stroke-width="4"/>
+            </svg>
+          </div>
+        </div>
+
+        {/* Content container */}
+        <div className={styles.contentContainer}>
+          <h2 className={styles.heading}>
             ¿Quiénes somos?
           </h2>
-          <div className="container">
-            <p
-              className={`${fonts.inter} font-[500] text-[24px] align-middle leading-[45px] mb-12`}
-            >
-              <b className="font-[900] ">Secure Core Consulting</b> ofrece
-              soluciones de seguridad y control de acceso de vanguardia para
-              empresas modernas. Nuestro producto estrella,{" "}
-              <b className="font-[900] ">NexusCore Controller</b>, garantiza una
-              gestión de seguridad fluida en toda su organización.
-            </p>
-            <button
-              type="button"
-              className={`${fonts.funnel_sans.className} text-[16px] font-[600] align-middle text-white rounded-[50px] w-[33%] max-sm:w-[70vw] cursor-pointer`}
-              style={{
-                padding: "19px 44px",
-                boxShadow: "0px 4px 15px 0px rgba(235, 55, 81, 0.3)",
-                backgroundColor: "rgba(235, 55, 81, 1)",
-              }}
-            >
-              Saber más!
-            </button>
-          </div>
+          <p className={styles.description}>
+            <b>Secure Core Consulting</b> ofrece soluciones de seguridad y control de acceso de vanguardia para empresas modernas. Nuestro producto estrella,{" "}
+            <b>NexusCore Controller</b>, garantiza una gestión de seguridad fluida en toda su organización.
+          </p>
+          <button
+            type="button"
+            className={styles.button}
+          >
+            Saber más
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className={styles.arrowIcon}>
+              <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="white"/>
+            </svg>
+          </button>
         </div>
       </div>
     </section>

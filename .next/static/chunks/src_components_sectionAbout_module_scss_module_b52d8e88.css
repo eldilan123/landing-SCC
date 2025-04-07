@@ -1,0 +1,247 @@
+/* [project]/src/components/sectionAbout.module.scss.module.css [app-client] (css) */
+.sectionAbout-module-scss-module__f0epJG__aboutSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 700px;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 0;
+}
+
+.sectionAbout-module-scss-module__f0epJG__aboutContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 8rem;
+  position: relative;
+}
+
+@media (width <= 1200px) {
+  .sectionAbout-module-scss-module__f0epJG__aboutContainer {
+    padding: 0 4rem;
+  }
+}
+
+@media (width <= 768px) {
+  .sectionAbout-module-scss-module__f0epJG__aboutContainer {
+    flex-direction: column;
+    padding: 0 2rem;
+    gap: 3rem;
+  }
+}
+
+.sectionAbout-module-scss-module__f0epJG__leftRedShape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+}
+
+.sectionAbout-module-scss-module__f0epJG__leftRedShape svg {
+  height: 100%;
+  width: auto;
+}
+
+@media (width <= 991px) {
+  .sectionAbout-module-scss-module__f0epJG__leftRedShape {
+    display: none;
+  }
+}
+
+.sectionAbout-module-scss-module__f0epJG__imageContainer {
+  flex: none;
+  position: relative;
+  width: 453px;
+  height: 486px;
+  z-index: 2;
+  margin-left: 1rem;
+}
+
+@media (width <= 1200px) {
+  .sectionAbout-module-scss-module__f0epJG__imageContainer {
+    width: 400px;
+    height: 430px;
+  }
+}
+
+@media (width <= 992px) {
+  .sectionAbout-module-scss-module__f0epJG__imageContainer {
+    width: 350px;
+    height: 380px;
+  }
+}
+
+@media (width <= 768px) {
+  .sectionAbout-module-scss-module__f0epJG__imageContainer {
+    width: 320px;
+    height: 340px;
+    margin-left: 0;
+  }
+}
+
+@media (width <= 576px) {
+  .sectionAbout-module-scss-module__f0epJG__imageContainer {
+    width: 280px;
+    height: 300px;
+  }
+}
+
+.sectionAbout-module-scss-module__f0epJG__laptopImageWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.sectionAbout-module-scss-module__f0epJG__laptopImageSvg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.sectionAbout-module-scss-module__f0epJG__laptopImageContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  clip-path: path("M0 143.326C0 64.4033 63.9795 0.423828 142.902 0.423828H453V342.675C453 421.597 389.021 485.577 310.098 485.577H0V143.326Z");
+}
+
+.sectionAbout-module-scss-module__f0epJG__yellowBorderSvg {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.sectionAbout-module-scss-module__f0epJG__contentContainer {
+  flex: none;
+  max-width: 540px;
+  margin-left: 4rem;
+  z-index: 2;
+}
+
+@media (width <= 1200px) {
+  .sectionAbout-module-scss-module__f0epJG__contentContainer {
+    margin-left: 3rem;
+    max-width: 480px;
+  }
+}
+
+@media (width <= 992px) {
+  .sectionAbout-module-scss-module__f0epJG__contentContainer {
+    margin-left: 2rem;
+    max-width: 420px;
+  }
+}
+
+@media (width <= 768px) {
+  .sectionAbout-module-scss-module__f0epJG__contentContainer {
+    margin-left: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.sectionAbout-module-scss-module__f0epJG__heading {
+  font-family: var(--font-space-grotesk);
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 61px;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(89.23deg, #f0813c 26.26%, #eb3751 68.68%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: #0000;
+}
+
+@media (width <= 992px) {
+  .sectionAbout-module-scss-module__f0epJG__heading {
+    font-size: 36px;
+    line-height: 50px;
+  }
+}
+
+@media (width <= 768px) {
+  .sectionAbout-module-scss-module__f0epJG__heading {
+    font-size: 32px;
+    line-height: 44px;
+  }
+}
+
+.sectionAbout-module-scss-module__f0epJG__description {
+  font-size: 24px;
+  line-height: 45px;
+  margin-bottom: 2.5rem;
+  color: #451a1a;
+}
+
+@media (width <= 992px) {
+  .sectionAbout-module-scss-module__f0epJG__description {
+    font-size: 20px;
+    line-height: 36px;
+  }
+}
+
+@media (width <= 768px) {
+  .sectionAbout-module-scss-module__f0epJG__description {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+.sectionAbout-module-scss-module__f0epJG__description b {
+  font-weight: 900;
+}
+
+.sectionAbout-module-scss-module__f0epJG__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  background-color: #eb3751;
+  color: #fff;
+  border-radius: 50px;
+  padding: 19px 44px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 15px #eb37514d;
+  transition: all .3s;
+  width: fit-content;
+}
+
+.sectionAbout-module-scss-module__f0epJG__button:hover {
+  background-color: #e02943;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px #eb375166;
+}
+
+@media (width <= 576px) {
+  .sectionAbout-module-scss-module__f0epJG__button {
+    padding: 16px 32px;
+    width: 100%;
+    max-width: 240px;
+  }
+}
+
+.sectionAbout-module-scss-module__f0epJG__arrowIcon {
+  margin-left: 8px;
+}
+
+/*# sourceMappingURL=src_components_sectionAbout_module_scss_module_b52d8e88.css.map*/
