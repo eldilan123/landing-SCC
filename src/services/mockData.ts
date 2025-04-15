@@ -2,49 +2,69 @@ import rocket from "../../public/values-icons/rocket.png";
 import hand1 from "../../public/values-icons/hand1.png";
 import shield from "../../public/values-icons/shield.png";
 import hand2 from "../../public/values-icons/hand2.png";
+import { 
+  faCogs, 
+  faLaptopCode, 
+  faServer, 
+  faHandshake, 
+  faWrench, 
+  faLightbulb 
+} from "@fortawesome/free-solid-svg-icons";
 
-export const mockServices = [
+export const servicesData = [
   {
     id: 1,
-    title: "Fábrica de desarrollo de software",
+    title: "Fábrica de Software",
+    icon: faCogs,
     description:
-      "Desarrollamos soluciones a medida con tecnología de vanguardia. Nuestra fábrica de software se especializa en la creación de aplicaciones escalables, seguras y de alto rendimiento, adaptadas a las necesidades específicas de cada cliente.",
-    path: "#",
+      "Implementamos un proceso integral de desarrollo de software utilizando metodologías ágiles para entregar soluciones robustas y seguras.",
+    longDescription:
+      "Nuestro servicio abarca desde la ideación y análisis hasta el diseño, desarrollo, pruebas y despliegue, asegurando estándares de calidad y comunicación fluida con el cliente.",
   },
   {
     id: 2,
-    title: "Proveedor de servicios profesionales",
+    title: "Desarrollo de software a la medida",
+    icon: faLaptopCode,
     description:
-      "Desarrollo Soporte especializado Implementación en la nube, Soporte en infraestructura, Administración de base de datos, Implementación de seguridad.",
-    path: "#",
+      "Creamos soluciones adaptadas a procesos y objetivos específicos, garantizando escalabilidad y fácil integración.",
+    longDescription:
+      "Definimos y desarrollamos software hecho a la medida, permitiendo la personalización completa e integración con otras plataformas, asegurando que la solución evolucione junto a tu negocio.",
   },
   {
     id: 3,
-    title: "Servicios UX/UI",
+    title: "Soporte en infraestructura tecnológica",
+    icon: faServer,
     description:
-      "Creamos experiencias digitales intuitivas, atractivas y eficientes. Nuestro equipo de UX/UI diseña interfaces centradas en el usuario, optimizando la usabilidad y la accesibilidad.",
-    path: "#",
+      "Mantenemos el óptimo funcionamiento y seguridad de los componentes tecnológicos de tu empresa.",
+    longDescription:
+      "Ofrecemos soporte para servidores, redes, hardware y bases de datos, incluyendo monitorización, respaldo, actualización de parches y asistencia técnica en sitio o de forma remota.",
   },
   {
     id: 4,
-    title: "Gestión de proyectos",
+    title: "Proveedor de servicios profesionales",
+    icon: faHandshake,
     description:
-      "Lideramos la planificación, ejecución y control de proyectos tecnológicos con metodologías ágiles y un enfoque estratégico.",
-    path: "#",
+      "Brindamos servicios especializados en desarrollo, implementación en la nube, administración de bases de datos, entre otros.",
+    longDescription:
+      "Nuestros expertos cubren diversas áreas de TI, apoyándote en el desarrollo, soporte, implementación y diseño de experiencias digitales de alta calidad.",
   },
   {
     id: 5,
     title: "Soporte y mantenimiento de software",
+    icon: faWrench,
     description:
-      "Ofrecemos soporte técnico especializado y mantenimiento evolutivo y correctivo para garantizar el óptimo funcionamiento de tus sistemas. ",
-    path: "#",
+      "Aseguramos la estabilidad y evolución de tus aplicaciones a través de soporte técnico y mantenimiento continuo.",
+    longDescription:
+      "Incluimos mantenimiento correctivo, adaptativo, evolutivo y preventivo para que tus sistemas se mantengan actualizados y seguros conforme crecen las necesidades de tu empresa.",
   },
   {
     id: 6,
     title: "Consultoría",
+    icon: faLightbulb,
     description:
-      "Análisis y diseño de soluciones tecnológicas Automatización de pruebas Definición de procesos CI/CD Optimización de calidad de código Administración de infraestructura en la nube Seguridad lógica y física de los sistemas",
-    path: "#",
+      "Analizamos y diseñamos estrategias tecnológicas, impulsando la innovación y optimización de tus procesos.",
+    longDescription:
+      "Ofrecemos servicios de consultoría para definir procesos, automatizar pruebas, implementar pipelines CI/CD, optimizar la calidad de código y reforzar la seguridad de tus sistemas.",
   },
 ];
 
@@ -133,7 +153,7 @@ export const mockContact = [
   {
     id: 2,
     title: "Soluciones",
-    items: ["Control de Acceso", "Gestión de Activos", "Integración de Seguridad"]
+    items: ["NexusCore Academico", "Control de Acceso", "Integración de Seguridad"]
   },
   {
     id: 3,

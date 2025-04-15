@@ -1,0 +1,122 @@
+.section {
+    /* Overall padding and a light background gradient */
+    padding: 2rem 1rem;
+    background: linear-gradient(to right, #fff, #f8fafc);
+    color: #333;
+  
+    /* Larger screens */
+    @media (min-width: 768px) {
+      padding: 3rem 2rem;
+    }
+    @media (min-width: 1024px) {
+      padding: 4rem 6rem;
+    }
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  
+    /* On medium screens and up, logo left - text right */
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: start;
+    }
+  }
+  
+  .logoContainer {
+    flex-shrink: 0; /* Don’t let the logo shrink */
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+  
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+      margin-right: 2rem;
+      justify-content: flex-start;
+    }
+  
+    img {
+      max-width: 150px;
+      height: auto;
+    }
+  }
+  
+  .textContent {
+    h2 {
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      font-size: 1.875rem; // ~ 3xl
+  
+      @media (min-width: 768px) {
+        font-size: 2.25rem; // ~ 4xl
+      }
+  
+      /* Gradient text effect */
+      background: linear-gradient(90deg, #f3bc2b 0%, #eb3751 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  
+    p {
+      line-height: 1.6;
+      font-size: 1rem;
+  
+      @media (min-width: 768px) {
+        font-size: 1.125rem;
+      }
+  
+      .bold {
+        font-weight: 700;
+      }
+    }
+  }
+  
+  /* Carousel container */
+  .carousel {
+    /* Use Keen’s default classes, but we can override spacing, etc. */
+    .keen-slider {
+      /* By default Keen will handle layout, but you can add extra styles here if needed */
+    }
+  
+    .keen-slider__slide {
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      margin: 0.5rem;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+  
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      }
+  
+      .slideContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+  
+        .iconContainer {
+          position: relative;
+          width: 60px;
+          height: 60px;
+          margin-bottom: 1rem;
+        }
+  
+        .cardTitle {
+          margin-bottom: 0.5rem;
+          font-weight: 700;
+          font-size: 1.25rem; // ~ text-xl
+        }
+  
+        .cardDesc {
+          font-size: 0.9375rem; // ~ text-sm
+          line-height: 1.4;
+        }
+      }
+    }
+  }
+  

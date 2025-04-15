@@ -1,0 +1,50 @@
+/* [project]/src/components/carousel/EmblaCarousel.module.css [app-client] (css) */
+.EmblaCarousel-module__ywxa1a__embla {
+  width: 100%;
+}
+
+.EmblaCarousel-module__ywxa1a__viewport {
+  overflow: hidden;
+}
+
+.EmblaCarousel-module__ywxa1a__container {
+  display: flex;
+}
+
+.EmblaCarousel-module__ywxa1a__slide {
+  min-height: 350px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.EmblaCarousel-module__ywxa1a__slideContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.EmblaCarousel-module__ywxa1a__description {
+  overflow-y: auto;
+}
+
+.EmblaCarousel-module__ywxa1a__iconContainer {
+  flex-shrink: 0;
+}
+
+@media (width <= 768px) {
+  .EmblaCarousel-module__ywxa1a__slide {
+    min-height: 380px;
+    height: 380px;
+  }
+}
+
+@media (width <= 640px) {
+  .EmblaCarousel-module__ywxa1a__slide {
+    min-height: 330px;
+    height: 330px;
+  }
+}
+
+/*# sourceMappingURL=src_components_carousel_EmblaCarousel_module_b52d8e88.css.map*/

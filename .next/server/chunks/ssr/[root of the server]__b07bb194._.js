@@ -634,6 +634,15 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$quienes$2d$somos$2
 ;
 ;
 const SectionAboutUs = ()=>{
+    const scrollToServices = ()=>{
+        const target = document.getElementById("services");
+        if (target) {
+            target.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "about",
         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sectionAbout$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].aboutSection,
@@ -654,17 +663,17 @@ const SectionAboutUs = ()=>{
                             fill: "#FC4554"
                         }, void 0, false, {
                             fileName: "[project]/src/components/sectionAbout.tsx",
-                            lineNumber: 16,
+                            lineNumber: 23,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/sectionAbout.tsx",
-                        lineNumber: 15,
+                        lineNumber: 22,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/sectionAbout.tsx",
-                    lineNumber: 14,
+                    lineNumber: 21,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -685,7 +694,7 @@ const SectionAboutUs = ()=>{
                                         fill: "white"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/sectionAbout.tsx",
-                                        lineNumber: 25,
+                                        lineNumber: 32,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("foreignObject", {
@@ -705,23 +714,23 @@ const SectionAboutUs = ()=>{
                                                 priority: true
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sectionAbout.tsx",
-                                                lineNumber: 28,
+                                                lineNumber: 35,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sectionAbout.tsx",
-                                            lineNumber: 27,
+                                            lineNumber: 34,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/sectionAbout.tsx",
-                                        lineNumber: 26,
+                                        lineNumber: 33,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/sectionAbout.tsx",
-                                lineNumber: 24,
+                                lineNumber: 31,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -737,23 +746,23 @@ const SectionAboutUs = ()=>{
                                     "stroke-width": "4"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/sectionAbout.tsx",
-                                    lineNumber: 41,
+                                    lineNumber: 48,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/sectionAbout.tsx",
-                                lineNumber: 40,
+                                lineNumber: 47,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/sectionAbout.tsx",
-                        lineNumber: 23,
+                        lineNumber: 30,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/sectionAbout.tsx",
-                    lineNumber: 21,
+                    lineNumber: 28,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -764,7 +773,7 @@ const SectionAboutUs = ()=>{
                             children: "¿Quiénes somos?"
                         }, void 0, false, {
                             fileName: "[project]/src/components/sectionAbout.tsx",
-                            lineNumber: 48,
+                            lineNumber: 55,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -774,28 +783,21 @@ const SectionAboutUs = ()=>{
                                     children: "Secure Core Consulting"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/sectionAbout.tsx",
-                                    lineNumber: 52,
+                                    lineNumber: 57,
                                     columnNumber: 13
                                 }, this),
-                                " ofrece soluciones de seguridad y control de acceso de vanguardia para empresas modernas. Nuestro producto estrella,",
-                                " ",
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                                    children: "NexusCore Controller"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/sectionAbout.tsx",
-                                    lineNumber: 53,
-                                    columnNumber: 13
-                                }, this),
-                                ", garantiza una gestión de seguridad fluida en toda su organización."
+                                " ofrece soluciones de seguridad..."
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/sectionAbout.tsx",
-                            lineNumber: 51,
+                            lineNumber: 56,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             type: "button",
+                            onClick: scrollToServices,
                             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$sectionAbout$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].button,
+                            "aria-label": "Saber más sobre Secure Core Consulting y sus servicios",
                             children: [
                                 "Saber más",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -810,35 +812,35 @@ const SectionAboutUs = ()=>{
                                         fill: "white"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/sectionAbout.tsx",
-                                        lineNumber: 61,
+                                        lineNumber: 74,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/sectionAbout.tsx",
-                                    lineNumber: 60,
+                                    lineNumber: 66,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/sectionAbout.tsx",
-                            lineNumber: 55,
+                            lineNumber: 59,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/sectionAbout.tsx",
-                    lineNumber: 47,
+                    lineNumber: 54,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/sectionAbout.tsx",
-            lineNumber: 12,
+            lineNumber: 19,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/sectionAbout.tsx",
-        lineNumber: 11,
+        lineNumber: 18,
         columnNumber: 5
     }, this);
 };

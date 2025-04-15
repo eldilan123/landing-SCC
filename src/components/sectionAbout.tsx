@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import Image from "next/image";
 import * as fonts from "@/libs/fonts";
@@ -7,6 +8,13 @@ import styles from "./sectionAbout.module.scss";
 import laptopImage from "../../public/quienes-somos-ssc.png";
 
 const SectionAboutUs: React.FC = () => {
+
+  const scrollToServices = () => {
+    const target = document.getElementById("services");
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
   return (
     <section id="about" className={styles.aboutSection}>
       <div className={styles.aboutContainer}>
@@ -45,19 +53,26 @@ const SectionAboutUs: React.FC = () => {
 
         {/* Content container */}
         <div className={styles.contentContainer}>
-          <h2 className={styles.heading}>
-            ¿Quiénes somos?
-          </h2>
+          <h2 className={styles.heading}>¿Quiénes somos?</h2>
           <p className={styles.description}>
             <b>Secure Core Consulting</b> ofrece soluciones de seguridad y control de acceso de vanguardia para empresas modernas. Nuestro producto estrella,{" "}
             <b>NexusCore Controller</b>, garantiza una gestión de seguridad fluida en toda su organización.
           </p>
           <button
             type="button"
+            onClick={scrollToServices}
             className={styles.button}
+            aria-label="Saber más sobre Secure Core Consulting y sus servicios"
           >
             Saber más
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className={styles.arrowIcon}>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className={styles.arrowIcon}
+            >
               <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="white"/>
             </svg>
           </button>

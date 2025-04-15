@@ -24,12 +24,14 @@ const SectionMissionVision: React.FC = () => {
           Misión y visión
         </h2>
       </div>
-      <div className="flex flex-wrap justify-evenly pl-[3vw] pr-[3vw] mb-16">
+      <div className="flex flex-wrap justify-evenly pl-[3vw] pr-[3vw] mb-16 gap-y-8">
         {mockMission.map((e) => {
           return (
             <div
               key={e.auxId}
-              className="container rounded-[22px] justify-between flex flex-col p-[32px] w-[42vw] max-md:w-[60vw] max-sm:w-[80vw]"
+              className={`container rounded-[22px] justify-between flex flex-col p-[32px] w-[42vw] max-md:w-[60vw] max-sm:w-[80vw] ${
+                e.auxId === "mi" ? "max-md:mb-8" : ""
+              }`}
               style={{
                 color: "rgba(69, 26, 26, 1)",
                 background: `${e.bgColor}`,

@@ -15,12 +15,12 @@
 
 @media (width >= 768px) {
   .sectionHome-module-scss-module__gw-mlW__heroTextWrapper h1 {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 }
 
 .sectionHome-module-scss-module__gw-mlW__heroTextWrapper h2 {
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=src_components_sectionHome_module_scss_module_b52d8e88.css.map*/

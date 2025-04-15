@@ -135,25 +135,9 @@ const SectionHome: React.FC = () => {
               md:mb-6
             `}
           >
-            Moderniza tu control de accesos y protege tu organización.
+            Conectamos tecnología, personas y procesos para que tu empresa avance con confianza y 
+control total. Somos tu socio estratégico en innovación.
           </h2>
-
-          {/* PÁRRAFO PRINCIPAL */}
-          <p
-            className={`
-              ${fonts.funnel_sans.className} 
-              text-[14px] 
-              md:text-[16px] 
-              leading-[22px] 
-              md:leading-[24px] 
-              mb-6
-            `}
-          >
-            Secure Core Consulting ofrece soluciones de seguridad y control
-            de acceso de vanguardia para empresas modernas. Nuestro producto
-            estrella, NexusCore Controller, garantiza una gestión de seguridad
-            fluida en toda su organización.
-          </p>
 
           {/* BOTÓN DE ACCIÓN */}
           <button

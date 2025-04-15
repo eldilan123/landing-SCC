@@ -1,77 +1,88 @@
+// CardComponent.tsx
 import React from "react";
-import semiCircle from "../../public/semi-circle.png";
-import logoCards from "../../public/Group.svg";
-import * as fonts from "@/libs/fonts";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import Image from "next/image";
+import * as fonts from "@/libs/fonts";
 
 interface CardComponentProps {
   title: string;
   description: string;
-  path: string | "#";
+  icon: IconDefinition; // Usamos el tipo de FontAwesome
+  path?: string; // URL opcional
+  onClick?: () => void; // Acción opcional para abrir un modal u otra acción
 }
 
-const CardComponent: React.FC<CardComponentProps> = (props) => {
-  const { title, description, path } = props;
-
+const CardComponent: React.FC<CardComponentProps> = ({
+  title,
+  description,
+  icon,
+  path = "#",
+  onClick,
+}) => {
   return (
     <div
-      className="container relative text-center rounded-[20px] justify-between flex flex-col pt-[40px] w-[26vw] max-md:w-[40vw] max-sm:w-[80vw] h-[502px] mb-8"
+      className="relative text-center rounded-[20px] flex flex-col justify-between pt-[40px] w-[26vw] max-md:w-[40vw] max-sm:w-[80vw] h-[502px] mb-8"
       style={{
         color: "rgba(69, 26, 26, 1)",
         boxShadow: "0px 10px 30px 0px rgba(0, 0, 0, 0.05)",
       }}
     >
-      <div className="container pl-[4vw] pr-[4vw]">
+      {/* Encabezado con el icono */}
+      <div className="px-[4vw]">
         <div className="flex justify-center mb-8">
-          <Image
-            src={semiCircle}
-            className="absolute top-0 rounded-t-[20px]"
-            alt="Vector-hero-banner.svg"
-          />
-          <div
-            className="rounded-[80px] w-[106px] h-[106px] relative"
-            style={{
-              background: "rgba(252, 69, 84, 1)",
-              border: "6px solid rgba(255, 255, 255, 1)",
-            }}
-          >
-            <Image
-              src={logoCards}
-              className="absolute top-[20%] left-[25%]"
-              alt="Vector-hero-banner.svg"
-            />
+          <div className="rounded-full w-[106px] h-[106px] flex items-center justify-center bg-[#FC4554]">
+            <FontAwesomeIcon icon={icon} className="text-white text-4xl" />
           </div>
         </div>
         <h5
-          className={`${fonts.space_grotesk} text-[22px] font-[700] leading-[24px] align-middle `}
+          className={`${fonts.space_grotesk} text-[22px] font-[700] leading-[24px]`}
         >
           {title}
         </h5>
       </div>
-      <div className="container pl-[2vw] pr-[2vw] relative">
+
+      {/* Descripción del servicio */}
+      <div className="px-[2vw]">
         <p
-          className={`${fonts.funnel_sans} text-[14px] font-[300] leading-[22px] align-middle `}
+          className={`${fonts.funnel_sans} text-[14px] font-[300] leading-[22px]`}
         >
           {description}
         </p>
       </div>
-      <div
-        className="container flex justify-center p-[30px] relative"
-        style={{ borderTop: "1px solid rgba(252, 69, 84, 1)" }}
-      >
-        <a
-          href={path}
-          className={`${fonts.funnel_sans} text-[16px] font-[600] leading-[100%] align-middle`}
+
+      {/* Sección de acción: botón "Ver más" si se provee onClick, sino enlace "Saber más" */}
+      {onClick ? (
+        <div
+          className="flex justify-center p-[30px] relative border-t border-[#FC4554]"
         >
-          Saber más
-        </a>
-        <FontAwesomeIcon
-          className="w-[1.4vw] absolute left-[65%] top-[37%]"
-          icon={faArrowRight}
-        />
-      </div>
+          <button
+            onClick={onClick}
+            className={`${fonts.funnel_sans} text-[16px] font-[600] leading-[100%]`}
+          >
+            Ver más
+          </button>
+          <FontAwesomeIcon
+            className="w-[1.4vw] absolute left-[65%] top-[37%]"
+            icon={faArrowRight}
+          />
+        </div>
+      ) : (
+        <div
+          className="flex justify-center p-[30px] relative border-t border-[#FC4554]"
+        >
+          <a
+            href={path}
+            className={`${fonts.funnel_sans} text-[16px] font-[600] leading-[100%]`}
+          >
+            Saber más
+          </a>
+          <FontAwesomeIcon
+            className="w-[1.4vw] absolute left-[65%] top-[37%]"
+            icon={faArrowRight}
+          />
+        </div>
+      )}
     </div>
   );
 };

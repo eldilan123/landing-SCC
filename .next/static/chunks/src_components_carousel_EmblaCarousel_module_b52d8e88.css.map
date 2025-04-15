@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/carousel/EmblaCarousel.module.css"],"sourcesContent":["/* EmblaCarousel.module.css */\n\n.embla {\n    width: 100%;\n  }\n  \n  .viewport {\n    overflow: hidden;\n  }\n  \n  .container {\n    display: flex;\n  }\n  \n  .slide {\n    min-height: 350px;\n    height: 350px;\n    display: flex;\n    flex-direction: column;\n    flex-shrink: 0;\n  }\n  \n  .slideContent {\n    display: flex;\n    flex-direction: column;\n    height: 100%;\n  }\n  \n  .description {\n    overflow-y: auto;\n  }\n  \n  .iconContainer {\n    flex-shrink: 0;\n  }\n  \n  /* Responsive adjustments */\n  @media (max-width: 768px) {\n    .slide {\n      min-height: 380px;\n      height: 380px;\n    }\n  }\n  \n  @media (max-width: 640px) {\n    .slide {\n      min-height: 330px;\n      height: 330px;\n    }\n  }"],"names":[],"mappings":"AAEA;;;;AAIE;;;;AAIA;;;;AAIA;;;;;;;;AAQA;;;;;;AAMA;;;;AAIA;;;;AAKA;EACE;;;;;;AAMF;EACE"}}]
+}

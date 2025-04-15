@@ -1,0 +1,122 @@
+/* [project]/src/components/SectionMissionVision.module.scss.module.css [app-client] (css) */
+.SectionMissionVision-module-scss-module__9pCN8a__section {
+  padding: 2rem 1rem;
+  background: linear-gradient(to right, #fff, #f8fafc);
+  color: #333;
+}
+
+@media (width >= 768px) {
+  .SectionMissionVision-module-scss-module__9pCN8a__section {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (width >= 1024px) {
+  .SectionMissionVision-module-scss-module__9pCN8a__section {
+    padding: 4rem 6rem;
+  }
+}
+
+.SectionMissionVision-module-scss-module__9pCN8a__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+@media (width >= 768px) {
+  .SectionMissionVision-module-scss-module__9pCN8a__header {
+    flex-direction: row;
+    align-items: start;
+  }
+}
+
+.SectionMissionVision-module-scss-module__9pCN8a__logoContainer {
+  flex-shrink: 0;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media (width >= 768px) {
+  .SectionMissionVision-module-scss-module__9pCN8a__logoContainer {
+    margin-bottom: 0;
+    margin-right: 2rem;
+    justify-content: flex-start;
+  }
+}
+
+.SectionMissionVision-module-scss-module__9pCN8a__logoContainer img {
+  max-width: 150px;
+  height: auto;
+}
+
+.SectionMissionVision-module-scss-module__9pCN8a__textContent h2 {
+  font-weight: 700;
+  margin-bottom: .75rem;
+  font-size: 1.875rem;
+  background: linear-gradient(90deg, #f3bc2b 0%, #eb3751 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #0000;
+}
+
+@media (width >= 768px) {
+  .SectionMissionVision-module-scss-module__9pCN8a__textContent h2 {
+    font-size: 2.25rem;
+  }
+}
+
+.SectionMissionVision-module-scss-module__9pCN8a__textContent p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+@media (width >= 768px) {
+  .SectionMissionVision-module-scss-module__9pCN8a__textContent p {
+    font-size: 1.125rem;
+  }
+}
+
+.SectionMissionVision-module-scss-module__9pCN8a__textContent p .SectionMissionVision-module-scss-module__9pCN8a__bold {
+  font-weight: 700;
+}
+
+.SectionMissionVision-module-scss-module__9pCN8a__carousel .SectionMissionVision-module-scss-module__9pCN8a__keen-slider__slide {
+  border-radius: .5rem;
+  padding: 1.5rem;
+  margin: .5rem;
+  transition: transform .25s, box-shadow .25s;
+}
+
+.SectionMissionVision-module-scss-module__9pCN8a__carousel .SectionMissionVision-module-scss-module__9pCN8a__keen-slider__slide:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px #00000014;
+}
+
+.SectionMissionVision-module-scss-module__9pCN8a__carousel .SectionMissionVision-module-scss-module__9pCN8a__keen-slider__slide .SectionMissionVision-module-scss-module__9pCN8a__slideContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.SectionMissionVision-module-scss-module__9pCN8a__carousel .SectionMissionVision-module-scss-module__9pCN8a__keen-slider__slide .SectionMissionVision-module-scss-module__9pCN8a__slideContent .SectionMissionVision-module-scss-module__9pCN8a__iconContainer {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.SectionMissionVision-module-scss-module__9pCN8a__carousel .SectionMissionVision-module-scss-module__9pCN8a__keen-slider__slide .SectionMissionVision-module-scss-module__9pCN8a__slideContent .SectionMissionVision-module-scss-module__9pCN8a__cardTitle {
+  margin-bottom: .5rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.SectionMissionVision-module-scss-module__9pCN8a__carousel .SectionMissionVision-module-scss-module__9pCN8a__keen-slider__slide .SectionMissionVision-module-scss-module__9pCN8a__slideContent .SectionMissionVision-module-scss-module__9pCN8a__cardDesc {
+  font-size: .9375rem;
+  line-height: 1.4;
+}
+
+/*# sourceMappingURL=src_components_SectionMissionVision_module_scss_module_b52d8e88.css.map*/

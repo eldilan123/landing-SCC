@@ -1,0 +1,50 @@
+/* EmblaCarousel.module.css */
+
+.embla {
+    width: 100%;
+  }
+  
+  .viewport {
+    overflow: hidden;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .slide {
+    min-height: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+  }
+  
+  .slideContent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .description {
+    overflow-y: auto;
+  }
+  
+  .iconContainer {
+    flex-shrink: 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .slide {
+      min-height: 380px;
+      height: 380px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .slide {
+      min-height: 330px;
+      height: 330px;
+    }
+  }
