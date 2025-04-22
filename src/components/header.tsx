@@ -65,7 +65,7 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo (clicable para volver a la sección "home") */}
-        <div className="cursor-pointer" onClick={() => scrollToSection("home")}>
+        <div className="cursor-pointer flex-none" onClick={() => scrollToSection("home")}>
           <Image 
             src={logo} 
             alt="Logo Secure Core Consulting" 
