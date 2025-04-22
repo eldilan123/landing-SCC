@@ -21,6 +21,27 @@
     max-width: 1440px;
     padding: 0 8rem;
     position: relative;
+    .blobWrapper {
+      position: absolute;
+      right: -120px;      /* lo empujamos un poquito fuera para que no tape nada */
+      top: 50%;
+      transform: translateY(-50%);
+      width: 640px;       /* ajustá según el tamaño de tu PNG/SVG */
+      height: 640px;
+      z-index: 1;         /* por debajo del texto (que ya está en 2) */
+      pointer-events: none; // no intercepta clicks
+    
+      /* Si querés que se vea más suave, podés jugar con opacidad o blur */
+      img {
+        object-fit: contain;
+        opacity: .8;
+      }
+    
+      /* Lo ocultamos en tablet/móvil para no recargar */
+      @media (max-width: 991px) {
+        display: none;
+      }
+    }
     
     @media (max-width: 1200px) {
       padding: 0 4rem;

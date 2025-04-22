@@ -256,6 +256,28 @@
   position: relative;
 }
 
+.sectionAbout-module-scss-module__f0epJG__aboutContainer .sectionAbout-module-scss-module__f0epJG__blobWrapper {
+  position: absolute;
+  right: -120px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 640px;
+  height: 640px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.sectionAbout-module-scss-module__f0epJG__aboutContainer .sectionAbout-module-scss-module__f0epJG__blobWrapper img {
+  object-fit: contain;
+  opacity: .8;
+}
+
+@media (width <= 991px) {
+  .sectionAbout-module-scss-module__f0epJG__aboutContainer .sectionAbout-module-scss-module__f0epJG__blobWrapper {
+    display: none;
+  }
+}
+
 @media (width <= 1200px) {
   .sectionAbout-module-scss-module__f0epJG__aboutContainer {
     padding: 0 4rem;

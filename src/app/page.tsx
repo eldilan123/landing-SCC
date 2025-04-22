@@ -20,7 +20,6 @@ export default function Home() {
         <SectionValues />
         <SectionContact />
       </main>
-      <ScrollToUp />
       <Footer />
     </div>
   );
