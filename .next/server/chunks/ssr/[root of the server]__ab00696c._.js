@@ -593,7 +593,7 @@ const mockValues = [
     },
     {
         id: 4,
-        title: "Cliente:",
+        title: "Compromiso:",
         bgColor: "rgba(232, 77, 103, 1)",
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$values$2d$icons$2f$hand2$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$values$2d$icons$2f$hand2$2e$png__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
         description: "Poner las necesidades y satisfacción del cliente como nuestra máxima prioridad."

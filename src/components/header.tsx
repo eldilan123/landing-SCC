@@ -5,6 +5,7 @@ import Image from "next/image";
 import logo from "../../public/Logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { width } from "@fortawesome/free-solid-svg-icons/fa0";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -70,6 +71,7 @@ const Header: React.FC = () => {
             src={logo} 
             alt="Logo Secure Core Consulting" 
             className="w-28 md:w-auto h-auto"
+            style={{ width: "10rem" }}
           />
         </div>
 

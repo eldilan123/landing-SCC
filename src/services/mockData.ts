@@ -112,7 +112,7 @@ export const mockValues = [
   },
   {
     id: 4,
-    title: "Cliente:",
+    title: "Compromiso:",
     bgColor: "rgba(232, 77, 103, 1)",
     icon: hand2,
     description:
