@@ -36,7 +36,7 @@ const SectionContact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="overflow-x-hidden relative" style={{ background: "rgba(22, 20, 12, 1)" }}>
+    <section id="contact" className="overflow-x-hidden overflow-y-hidden relative" style={{ background: "rgba(22, 20, 12, 1)" }}>
       <VectorLeft />
       <div className="text-white" style={{ padding: "9vh 7vw" }}>
         <h2
