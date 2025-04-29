@@ -6,10 +6,11 @@ import logo from "../../public/Logo.png";
 import Image from "next/image";
 import { mockContact } from "@/services/mockData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLink, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import VectorLeft from "./vectores/vectorLeft";
 import VectorRight from "./vectores/vectorRight";
 import styles from './PrivacyModal.module.css';
+import LinkedInIcon from "./LinkedInIcon"; // Import the custom LinkedIn icon component
 
 const SectionContact: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
@@ -41,7 +42,7 @@ const SectionContact: React.FC = () => {
         <h2
           className={`${fonts.space_grotesk} font-[700] text-[40px] leading-[61px] align-middle text-3xl mb-4`}
         >
-          ¿Listo para transformar su seguridad?
+          ⁠¿Tu empresa está lista para el cambio?
         </h2>
         <p
           className={`${fonts.space_grotesk} font-[700] text-[16px] leading-[25px] align-middle mb-6`}
@@ -70,7 +71,17 @@ const SectionContact: React.FC = () => {
           <div className="w-[22%] max-md:w-[100%] max-md:mb-8">
             <Image src={logo} alt="Logo Secure Core" className="w-[15vw] max-md:w-[30vw] max-sm:w-[50vw]" />
             <p className="mt-4">Síguenos en</p>
-            <FontAwesomeIcon className="w-[1.4vw] max-md:w-[3vw] max-sm:w-[5vw] mt-2" icon={faLink} />
+            <div className="flex items-center mt-2">
+              <a 
+                href="https://www.linkedin.com/company/secure-core-consulting/about/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="text-white hover:text-gray-300 transition-colors duration-300"
+              >
+                <LinkedInIcon className="w-[1.4vw] max-md:w-[3vw] max-sm:w-[5vw]" />
+              </a>
+            </div>
           </div>
           {updatedContact.map((section) => {
             return (

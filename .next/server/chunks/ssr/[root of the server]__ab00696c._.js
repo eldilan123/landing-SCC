@@ -635,15 +635,15 @@ const mockContact = [
         title: "Soluciones",
         items: [
             "NexusCore Academico",
-            "Control de Acceso",
-            "Integración de Seguridad"
+            "NexusCore Office",
+            "Integraciones Personalizadas"
         ]
     },
     {
         id: 3,
         title: "Contacto",
         items: [
-            "info.securecore@securecoreconsulting.com",
+            "info@securecoreconsulting.com",
             "+57 301 291 6999",
             "Bogotá D.C."
         ]

@@ -1238,7 +1238,7 @@ const mockContact = [
         id: 3,
         title: "Contacto",
         items: [
-            "info.securecore@securecoreconsulting.com",
+            "info@securecoreconsulting.com",
             "+57 301 291 6999",
             "Bogotá D.C."
         ]

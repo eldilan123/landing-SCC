@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/mnqkyzlb";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mzzrdzbj";
 
 const ContactForm: React.FC<{ onDone: () => void }> = ({ onDone }) => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });

@@ -153,11 +153,11 @@ export const mockContact = [
   {
     id: 2,
     title: "Soluciones",
-    items: ["NexusCore Academico", "Control de Acceso", "Integración de Seguridad"]
+    items: ["NexusCore Academico", "NexusCore Office", "Integraciones Personalizadas"]
   },
   {
     id: 3,
     title: "Contacto",
-    items: ["info.securecore@securecoreconsulting.com", "+57 301 291 6999", "Bogotá D.C."]
+    items: ["info@securecoreconsulting.com", "+57 301 291 6999", "Bogotá D.C."]
   },
 ];

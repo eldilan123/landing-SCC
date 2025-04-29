@@ -1120,7 +1120,7 @@ const mockContact = [
         id: 3,
         title: "Contacto",
         items: [
-            "info.securecore@securecoreconsulting.com",
+            "info@securecoreconsulting.com",
             "+57 301 291 6999",
             "Bogotá D.C."
         ]
@@ -2595,7 +2595,7 @@ const SectionContact = ()=>{
                                             children: [
                                                 "Si tiene dudas o inquietudes sobre esta política, puede escribirnos a ",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                                    children: "info.securecore@securecoreconsulting.com"
+                                                    children: "info@securecoreconsulting.com"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/sectionContact.tsx",
                                                     lineNumber: 202,
